@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+:root {
+  --gradient-1: linear-gradient(135deg,#74bbf5,#f59fbc);
+  --gradient-2: linear-gradient(135deg,#26e6b2,#5b548a);
+  --gradient-3: linear-gradient(120deg, #6dcfe7, #092c49);
+}
+body {
+  background: var(--gradient-1);
+  background-image: url("/img/mundo-verde.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+
+.card {
+  width: 40%;
+  min-height: 470px;
+  background: var(--gradient-3);
+  color: #fff;
+  margin: 30px auto 0;
+  border-radius: 20px;
+  padding: 30px 35px;
+  text-align: center;
+  -webkit-box-shadow: 31px 31px 56px -10px rgba(27,28,28,1);
+  -moz-box-shadow: 31px 31px 56px -10px rgba(27,28,28,1);
+  box-shadow: 31px 31px 56px -10px rgba(27,28,28,1);
+  
+}
+
+.search {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search input {
+  border: 0;
+  outline: 0;
+  background: #ebfffc;
+  color: #555;
+  padding: 10px 25px ;
+  width: 80%;
+  height: 50px;
+  border-radius: 15px;
+  flex: 1; 
+  margin-right: 16px;
+  font-size: 18px;
+}
+
+.search button {
+  border: 0;
+  background: #ebfffc;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  vertical-align: middle; 
+  cursor: pointer;
+}
+
+.search button:hover {
+    background: #f0c66b;
+}
+
+.search button img {
+  width: 20px;
+}
+.weather {
+  display: none;
+}
+.weather-icon {
+  width: 170px;
+  margin-top: 30px;
+}
+.weather h1 {
+font-size: 80px;
+font-weight: 500;
+}
+.weather h2 {
+  font-size: 45px;
+  font-weight: 400;
+  margin-top: -10px;
+}
+
+.details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin-top: 50px;
+
+}
+.col {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}  
+
+.col img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.detail-texto {
+  font-size: 16px;
+}
+.humedad .viento {
+  font-size: 28px;
+  margin-top: -6px; 
+}
+
+.error {
+  text-align: left;
+  font-size: 14px;
+  margin-left: 10px;
+  margin-top: 10px;
+  display: none;
+}
+@media screen and ( max-width:1000px) {
+  .card {
+    width: 60%;
+  }
+  .search {
+    flex-direction: column;
+  }
+  .search input {
+    width: 100%;
+    margin: 10px;
+    font-size: 14px;
+  }
+  .search button {
+    width: 40px;
+    height: 40px;    
+    margin-top: 15px;
+  }
+
+  .details {
+    justify-content: space-between;
+    align-items: start;
+  }
+
+  .detail-texto {
+    font-size: 14px;
+  }
+  .col {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .col img {
+    width: 35px;
+    margin-right: 10px;
+  }
+
+  .weather-icon {
+    width: 50px;
+  }
+
+  .humedad .viento {
+    font-size: 16px;
+    margin-top: -6px; 
+  }
+
+  .weather {
+    margin-top: -20px;
+  }
+  .weather h1 {
+    font-size: 40px;
+  }
+  .weather h2 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width:600px) {
+  .card {
+    width: 80%;
+  }
+  .details {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
