@@ -21,8 +21,8 @@
         
          switch (data.weather[0].main) {
            case 'Rain':
-             weatherIcon.src = "../img/rain.png";
-             cuerpo.style.backgroundImage = "url('../img/lluvioso.jpg')";
+             weatherIcon.src = "/img/rain.png";
+             cuerpo.style.backgroundImage = "url('/img/lluvioso.jpg')";
              break;
            case 'Thunderstorm': 
              weatherIcon.src = "../img/thunderstorm.png";
