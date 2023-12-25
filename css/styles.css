@@ -75,8 +75,8 @@ body {
   display: none;
 }
 .weather-icon {
-  width: 170px;
-  margin-top: 30px;
+  width: 160px;
+  margin-top: 20px;
 }
 .weather h1 {
 font-size: 80px;
