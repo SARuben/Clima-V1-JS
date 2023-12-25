@@ -21,34 +21,34 @@
         
          switch (data.weather[0].main) {
            case 'Rain':
-             weatherIcon.src = "./img/rain.png";
-             cuerpo.style.backgroundImage = "url('./img/lluvioso.jpg')";
+             weatherIcon.src = "../img/rain.png";
+             cuerpo.style.backgroundImage = "url('../img/lluvioso.jpg')";
              break;
            case 'Thunderstorm': 
-             weatherIcon.src = "./img/thunderstorm.png";
-             cuerpo.style.backgroundImage = "url('./img/tormenta.jpg')";
+             weatherIcon.src = "../img/thunderstorm.png";
+             cuerpo.style.backgroundImage = "url('../img/tormenta.jpg')";
              break;
            case 'Drizzle':
-             weatherIcon.src = "./img/drizzle.png";
-             cuerpo.style.backgroundImage = "url('./img/nublado.jpg')";           
+             weatherIcon.src = "../img/drizzle.png";
+             cuerpo.style.backgroundImage = "url('../img/nublado.jpg')";           
              break;
            case 'Snow':
-             weatherIcon.src = "./img/snow.png";
-             cuerpo.style.backgroundImage = "url('./img/nieve.jpg')";           
+             weatherIcon.src = "../img/snow.png";
+             cuerpo.style.backgroundImage = "url('../img/nieve.jpg')";           
              break;
            case 'Mist': 
              weatherIcon.src = "./img/mist.png";           
              break;
            case 'Clear':
-             weatherIcon.src = "./img/clear.png"; 
-             cuerpo.style.backgroundImage = "url('./img/despejado.jpg')";                               
+             weatherIcon.src = "../img/clear.png"; 
+             cuerpo.style.backgroundImage = "url('../img/despejado.jpg')";                               
              break;
              case 'Clouds':
-              weatherIcon.src = "./img/clouds.png";
-              cuerpo.style.backgroundImage = "url('./img/nublado.jpg')";                      
+              weatherIcon.src = "../img/clouds.png";
+              cuerpo.style.backgroundImage = "url('../img/nublado.jpg')";                      
               break;    
            default:                             
-           cuerpo.style.backgroundImage = "url('./img/earth-8067366_1280.png')";           
+           cuerpo.style.backgroundImage = "url('../img/earth-8067366_1280.png')";           
              break;
         } 
         document.querySelector(".weather").style.display= "block"
