@@ -14,7 +14,6 @@
       } else {
         document.querySelector(".error").style.display = "none";
         const data = await response.json();
-        console.log(data)
         document.querySelector(".city").innerHTML = data.name
         document.querySelector(".temp").innerHTML = Math.round(data.main.temp) + '°C'
         document.querySelector(".humedad").innerHTML = data.main.humidity + '%'
@@ -58,7 +57,7 @@
               cuerpo.style.backgroundImage = "url('./img/earth-8067366_1280png')";
               document.querySelector(".descripcion").innerHTML = "";
               break;
-        } 
+        }
         document.querySelector(".weather").style.display= "block"
       } 
     } 
